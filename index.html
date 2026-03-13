@@ -1,432 +1,396 @@
 <!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8">
+<!-- saved from url=(0054)file:///C:/Users/Chris/Downloads/privacy_policy_2.html -->
+<html lang="fr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EasyCourses — Maîtrise ton budget courses</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            rose: {
-              blush: '#FF85A1',
-              light: '#FFB3C6',
-              pale:  '#FFF0F4',
-              soft:  '#FFE4EC',
-            },
-            gray: {
-              silk: '#F8F8FA',
-              mist: '#F1F1F5',
-              dove: '#E8E8EF',
-              stone: '#9A9AAF',
-            }
-          },
-          fontFamily: {
-            display: ['Pacifico', 'cursive'],
-            body: ['Nunito', 'sans-serif'],
-          },
-          borderRadius: {
-            '4xl': '2rem',
-            '5xl': '2.5rem',
-          },
-          boxShadow: {
-            'soft':   '0 4px 24px rgba(255,133,161,0.12)',
-            'card':   '0 8px 40px rgba(255,133,161,0.15)',
-            'float':  '0 20px 60px rgba(255,133,161,0.22)',
-            'inner-rose': 'inset 0 0 0 1.5px rgba(255,133,161,0.2)',
-          }
-        }
-      }
-    }
-  </script>
+  <title>Politique de confidentialité – EasyCourses</title>
   <style>
-    body { font-family: 'Nunito', sans-serif; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
 
-    /* Blob background */
-    .blob {
-      position: absolute;
-      border-radius: 50%;
-      filter: blur(80px);
-      opacity: 0.35;
-      pointer-events: none;
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #f0f4f8;
+      color: #1a202c;
+      line-height: 1.7;
     }
 
-    /* Floating phone mockup */
-    @keyframes float {
-      0%, 100% { transform: translateY(0px) rotate(-2deg); }
-      50%       { transform: translateY(-18px) rotate(-2deg); }
-    }
-    .phone-float { animation: float 5s ease-in-out infinite; }
-
-    /* Reveal animations */
-    @keyframes fadeUp {
-      from { opacity: 0; transform: translateY(32px); }
-      to   { opacity: 1; transform: translateY(0); }
-    }
-    .fade-up { animation: fadeUp 0.7s ease forwards; opacity: 0; }
-    .delay-1 { animation-delay: 0.1s; }
-    .delay-2 { animation-delay: 0.22s; }
-    .delay-3 { animation-delay: 0.34s; }
-    .delay-4 { animation-delay: 0.46s; }
-    .delay-5 { animation-delay: 0.58s; }
-
-    /* Button shine */
-    .btn-shine {
-      position: relative;
-      overflow: hidden;
-    }
-    .btn-shine::after {
-      content: '';
-      position: absolute;
-      top: -50%;
-      left: -70%;
-      width: 50%;
-      height: 200%;
-      background: linear-gradient(120deg, transparent, rgba(255,255,255,0.35), transparent);
-      transform: skewX(-20deg);
-      transition: left 0.55s ease;
-    }
-    .btn-shine:hover::after { left: 130%; }
-
-    /* Card hover */
-    .feature-card {
-      transition: transform 0.25s ease, box-shadow 0.25s ease;
-    }
-    .feature-card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 16px 50px rgba(255,133,161,0.2);
-    }
-
-    /* Dotted bg pattern */
-    .dot-pattern {
-      background-image: radial-gradient(circle, rgba(255,133,161,0.18) 1px, transparent 1px);
-      background-size: 22px 22px;
-    }
-
-    /* Badge pill */
-    .badge {
-      background: linear-gradient(135deg, #FF85A1, #FFB3C6);
+    header {
+      background: linear-gradient(135deg, #1565C0, #1976D2);
       color: white;
-      font-size: 0.7rem;
+      padding: 48px 24px 40px;
+      text-align: center;
+    }
+
+    .app-icon {
+      font-size: 3.5rem;
+      display: block;
+      margin-bottom: 12px;
+    }
+
+    header h1 {
+      font-size: 2rem;
       font-weight: 800;
-      letter-spacing: 0.08em;
+      letter-spacing: -0.5px;
+    }
+
+    header p {
+      margin-top: 8px;
+      font-size: 1rem;
+      opacity: 0.85;
+    }
+
+    .badge {
+      display: inline-block;
+      margin-top: 16px;
+      background: rgba(255,255,255,0.2);
+      border: 1px solid rgba(255,255,255,0.4);
+      border-radius: 999px;
+      padding: 6px 18px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+    }
+
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 40px 24px 80px;
+    }
+
+    .summary-box {
+      background: #E8F5E9;
+      border-left: 5px solid #2E7D32;
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin-bottom: 40px;
+    }
+
+    .summary-box h2 {
+      color: #2E7D32;
+      font-size: 1rem;
+      font-weight: 800;
       text-transform: uppercase;
-      padding: 5px 14px;
-      border-radius: 99px;
+      letter-spacing: 0.08em;
+      margin-bottom: 12px;
     }
 
-    /* Screen mock inner */
-    .screen-mock {
-      background: linear-gradient(160deg, #fff5f7, #fff);
+    .summary-box ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
     }
 
-    /* Wavy divider */
-    .wave-divider { line-height: 0; }
+    .summary-box li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 0.95rem;
+      color: #1B5E20;
+      font-weight: 600;
+    }
+
+    .summary-box li .icon {
+      font-size: 1.1rem;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    section {
+      background: white;
+      border-radius: 16px;
+      padding: 28px 32px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    }
+
+    section h2 {
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: #1565C0;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    section h2 .emoji {
+      font-size: 1.3rem;
+    }
+
+    section p {
+      font-size: 0.95rem;
+      color: #4a5568;
+      margin-bottom: 10px;
+    }
+
+    section p:last-child { margin-bottom: 0; }
+
+    section ul {
+      margin-top: 8px;
+      margin-left: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    section ul li {
+      font-size: 0.93rem;
+      color: #4a5568;
+    }
+
+    .highlight {
+      background: #EFF6FF;
+      border-radius: 10px;
+      padding: 12px 16px;
+      font-size: 0.92rem;
+      color: #1e40af;
+      font-weight: 600;
+      margin-top: 12px;
+    }
+
+    .date-info {
+      text-align: center;
+      color: #718096;
+      font-size: 0.85rem;
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid #e2e8f0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 24px;
+      font-size: 0.82rem;
+      color: #a0aec0;
+    }
+
+    @media (max-width: 600px) {
+      section { padding: 20px 18px; }
+      header h1 { font-size: 1.6rem; }
+      main { padding: 24px 16px 60px; }
+    }
   </style>
 </head>
-<body class="bg-white text-gray-800 overflow-x-hidden">
+<body>
 
-  <!-- ═══════════════════════════════
-       HEADER
-  ═══════════════════════════════ -->
-  <header class="relative z-10 flex items-center justify-between px-6 py-5 max-w-5xl mx-auto">
-    <div class="flex items-center gap-2 fade-up delay-1">
-      <span class="text-2xl">🛍️</span>
-      <span class="font-display text-2xl" style="color:#FF85A1">EasyCourses</span>
-    </div>
-    <nav class="hidden md:flex items-center gap-8 fade-up delay-2">
-      <a href="#features" class="text-sm font-700 text-gray-stone hover:text-rose-blush transition-colors duration-200">Fonctionnalités</a>
-      <a href="#download" class="text-sm font-700 text-gray-stone hover:text-rose-blush transition-colors duration-200">Télécharger</a>
-    </nav>
-    <a href="#download" class="fade-up delay-3 btn-shine bg-rose-blush text-white text-sm font-800 px-5 py-2.5 rounded-full shadow-soft hover:shadow-card transition-all duration-300 hover:scale-105">
-      📲 Télécharger
-    </a>
-  </header>
+<header>
+  <span class="app-icon">🛒</span>
+  <h1>EasyCourses</h1>
+  <p>Politique de confidentialité</p>
+  <span class="badge">🔒 Vos données vous appartiennent</span>
+</header>
 
-  <!-- ═══════════════════════════════
-       HERO
-  ═══════════════════════════════ -->
-  <section class="relative pt-6 pb-28 overflow-hidden">
+<main>
 
-    <!-- Blobs décoratifs -->
-    <div class="blob w-96 h-96 -top-20 -left-20" style="background:#FFB3C6"></div>
-    <div class="blob w-80 h-80 top-1/2 -right-24" style="background:#FF85A1"></div>
-    <div class="blob w-64 h-64 bottom-0 left-1/3" style="background:#FFE4EC"></div>
-
-    <!-- Dotted pattern -->
-    <div class="dot-pattern absolute inset-0 opacity-60 pointer-events-none"></div>
-
-    <div class="relative z-10 max-w-5xl mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
-
-      <!-- Texte -->
-      <div class="flex-1 text-center md:text-left">
-        <div class="inline-block badge mb-5 fade-up delay-1">✅ Gratuit · Hors ligne · Privé</div>
-        <h1 class="font-display text-5xl md:text-6xl leading-tight mb-5 fade-up delay-2" style="color:#FF85A1">
-          Maîtrise tes<br>
-          <span class="text-gray-800">courses</span> 🛒😊
-        </h1>
-        <p class="text-gray-stone text-lg font-600 leading-relaxed mb-8 max-w-md fade-up delay-3">
-          Compte avant la caisse, prépare ta liste et garde tes tickets de caisse — tout ça sans compte, sans serveur, 100% sur ton téléphone.
-        </p>
-        <div class="flex flex-col sm:flex-row gap-3 justify-center md:justify-start fade-up delay-4">
-          <a href="#download" id="download" class="btn-shine inline-flex items-center justify-center gap-2 text-white font-800 text-base px-8 py-4 rounded-2xl shadow-float hover:shadow-card hover:scale-105 transition-all duration-300"
-             style="background: linear-gradient(135deg, #FF85A1, #FF5C8A)">
-            📥 Télécharger l'APK
-          </a>
-          <a href="#features" class="inline-flex items-center justify-center gap-2 text-rose-blush font-800 text-base px-8 py-4 rounded-2xl bg-rose-pale hover:bg-rose-soft transition-all duration-300 shadow-inner-rose">
-            Découvrir →
-          </a>
-        </div>
-        <!-- Trust badges -->
-        <div class="flex flex-wrap gap-4 mt-8 justify-center md:justify-start fade-up delay-5">
-          <span class="flex items-center gap-1.5 text-xs font-700 text-gray-stone"><span class="text-base">🔒</span> 100% local</span>
-          <span class="flex items-center gap-1.5 text-xs font-700 text-gray-stone"><span class="text-base">📵</span> Hors ligne</span>
-          <span class="flex items-center gap-1.5 text-xs font-700 text-gray-stone"><span class="text-base">🆓</span> Gratuit</span>
-          <span class="flex items-center gap-1.5 text-xs font-700 text-gray-stone"><span class="text-base">⚡</span> Léger & rapide</span>
-        </div>
-      </div>
-
-      <!-- Mockup téléphone -->
-      <div class="flex-1 flex justify-center items-center fade-up delay-3">
-        <div class="phone-float relative">
-          <!-- Ombre du téléphone -->
-          <div class="absolute -bottom-6 left-1/2 -translate-x-1/2 w-48 h-6 rounded-full opacity-20" style="background:radial-gradient(ellipse, #FF85A1, transparent); filter:blur(12px)"></div>
-          <!-- Corps téléphone -->
-          <div class="relative w-64 h-[520px] rounded-[3rem] shadow-float overflow-hidden"
-               style="background:linear-gradient(145deg, #FF85A1, #FF5C8A); padding: 3px;">
-            <div class="w-full h-full rounded-[2.8rem] screen-mock overflow-hidden flex flex-col">
-              <!-- Barre statut mockup -->
-              <div class="flex justify-between items-center px-6 pt-3 pb-1 text-xs font-800" style="color:#FF85A1; background:linear-gradient(135deg,#f472b6,#fb7185)">
-                <span class="text-white text-xs font-800">14:27</span>
-                <div class="w-20 h-5 bg-black rounded-full mx-auto opacity-80"></div>
-                <span class="text-white text-xs">🔋</span>
-              </div>
-              <!-- Nav mockup -->
-              <div class="flex justify-around py-2 px-2 text-xs font-800 border-b border-pink-100">
-                <span class="flex flex-col items-center gap-0.5" style="color:#FF85A1">🛒<span style="font-size:0.5rem">Panier</span></span>
-                <span class="flex flex-col items-center gap-0.5 opacity-40">📋<span style="font-size:0.5rem">Ma liste</span></span>
-                <span class="flex flex-col items-center gap-0.5 opacity-40">📷<span style="font-size:0.5rem">Tickets</span></span>
-                <span class="flex flex-col items-center gap-0.5 opacity-40">📜<span style="font-size:0.5rem">Historique</span></span>
-                <span class="flex flex-col items-center gap-0.5 opacity-40">⚙️<span style="font-size:0.5rem">Réglages</span></span>
-              </div>
-              <!-- Contenu app mockup -->
-              <div class="flex-1 px-4 py-3 space-y-3 overflow-hidden">
-                <p class="font-display text-lg" style="color:#FF85A1">🛍️ EasyCourses</p>
-                <!-- Total card -->
-                <div class="rounded-3xl p-4 text-center text-white" style="background:linear-gradient(135deg,#f472b6,#fb7185)">
-                  <p class="text-xs font-700 opacity-80 uppercase tracking-wider">Total dans mon panier</p>
-                  <p class="text-4xl font-900 mt-1">€24,00</p>
-                </div>
-                <!-- Articles -->
-                <div class="bg-white rounded-2xl p-3 shadow-sm border border-pink-50 flex items-center justify-between">
-                  <div class="flex items-center gap-2">
-                    <span class="text-lg">🍎</span>
-                    <div><p class="text-xs font-800 text-gray-700">Pommes bio</p><p class="text-xs font-600" style="color:#FF85A1">€ 3,50</p></div>
-                  </div>
-                  <div class="flex items-center gap-1">
-                    <button class="w-6 h-6 rounded-full flex items-center justify-center text-xs font-800" style="background:#FFE4EC; color:#FF85A1">−</button>
-                    <span class="text-xs font-800 w-4 text-center">2</span>
-                    <button class="w-6 h-6 rounded-full flex items-center justify-center text-xs font-800" style="background:#FFE4EC; color:#FF85A1">+</button>
-                  </div>
-                </div>
-                <div class="bg-white rounded-2xl p-3 shadow-sm border border-pink-50 flex items-center justify-between">
-                  <div class="flex items-center gap-2">
-                    <span class="text-lg">🥐</span>
-                    <div><p class="text-xs font-800 text-gray-700">Croissants</p><p class="text-xs font-600" style="color:#FF85A1">€ 2,20</p></div>
-                  </div>
-                  <div class="flex items-center gap-1">
-                    <button class="w-6 h-6 rounded-full flex items-center justify-center text-xs font-800" style="background:#FFE4EC; color:#FF85A1">−</button>
-                    <span class="text-xs font-800 w-4 text-center">1</span>
-                    <button class="w-6 h-6 rounded-full flex items-center justify-center text-xs font-800" style="background:#FFE4EC; color:#FF85A1">+</button>
-                  </div>
-                </div>
-                <!-- Bouton terminer -->
-                <button class="w-full py-2.5 rounded-2xl text-white text-xs font-800 shadow-sm" style="background:linear-gradient(135deg,#f472b6,#fb7185)">✅ Terminer &amp; vider le panier</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Wave divider -->
-  <div class="wave-divider" style="background:#F8F8FA">
-    <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-      <path d="M0,30 C360,60 1080,0 1440,30 L1440,0 L0,0 Z" fill="white"/>
-    </svg>
+  <!-- Résumé en un coup d'œil -->
+  <div class="summary-box">
+    <h2>✅ En résumé</h2>
+    <ul>
+      <li><span class="icon">🚫</span> Aucune donnée personnelle collectée</li>
+      <li><span class="icon">📵</span> Aucune connexion Internet requise</li>
+      <li><span class="icon">☁️</span> Aucun serveur, aucun cloud</li>
+      <li><span class="icon">🍪</span> Aucun cookie de suivi personnel</li>
+      <li><span class="icon">📱</span> Tout reste sur votre téléphone</li>
+    </ul>
   </div>
 
-  <!-- ═══════════════════════════════
-       FEATURES
-  ═══════════════════════════════ -->
-  <section id="features" class="py-20 px-6" style="background:#F8F8FA">
-    <div class="max-w-5xl mx-auto">
+  <!-- 1. Introduction -->
+  <section>
+    <h2><span class="emoji">📄</span> 1. Introduction</h2>
+    <p>
+      Bienvenue dans <strong>EasyCourses</strong>, l'application de gestion de budget et de liste de courses.
+      Cette politique de confidentialité explique de façon transparente comment votre vie privée est protégée
+      lorsque vous utilisez notre application.
+    </p>
+    <p>
+      La protection de vos données personnelles est au cœur de notre conception. EasyCourses a été conçue
+      selon le principe du <strong>« privacy by design »</strong> : aucune donnée n'est collectée, 
+      transmise ou partagée.
+    </p>
+  </section>
 
-      <!-- Titre section -->
-      <div class="text-center mb-14">
-        <div class="inline-block badge mb-4">Fonctionnalités</div>
-        <h2 class="font-display text-4xl md:text-5xl" style="color:#FF85A1">
-          Pourquoi nous<br>choisir ? 🛒
-        </h2>
-        <p class="text-gray-stone font-600 mt-4 max-w-lg mx-auto text-base leading-relaxed">
-          Une app pensée pour le quotidien. Simple, rapide et efficace.
-        </p>
-      </div>
-
-      <!-- Cards -->
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-
-        <!-- Card 1 : Budget -->
-        <div class="feature-card bg-white rounded-4xl p-8 shadow-card relative overflow-hidden">
-          <div class="absolute top-0 right-0 w-32 h-32 rounded-full -translate-y-1/2 translate-x-1/2 opacity-10" style="background:#FF85A1"></div>
-          <div class="w-16 h-16 rounded-3xl flex items-center justify-center text-3xl mb-6 shadow-soft" style="background:linear-gradient(135deg,#FF85A1,#FFB3C6)">
-            💰
-          </div>
-          <h3 class="font-900 text-xl text-gray-800 mb-3">Maîtrise du budget</h3>
-          <p class="text-gray-stone font-600 leading-relaxed text-sm">
-            Suis ton total en temps réel pendant que tu fais tes courses. Définis un budget max et sois alerté avant de dépasser. Fini les mauvaises surprises à la caisse !
-          </p>
-          <div class="mt-6 flex gap-2">
-            <span class="text-xs font-700 px-3 py-1 rounded-full" style="background:#FFF0F4; color:#FF85A1">Total en direct</span>
-            <span class="text-xs font-700 px-3 py-1 rounded-full" style="background:#FFF0F4; color:#FF85A1">Budget max</span>
-          </div>
-        </div>
-
-        <!-- Card 2 : Scan / Calcul -->
-        <div class="feature-card bg-white rounded-4xl p-8 shadow-card relative overflow-hidden" style="margin-top: 0;">
-          <!-- Accentuation centrale -->
-          <div class="absolute -bottom-8 -left-8 w-40 h-40 rounded-full opacity-8" style="background:#FFE4EC"></div>
-          <div class="w-16 h-16 rounded-3xl flex items-center justify-center text-3xl mb-6 shadow-soft" style="background:linear-gradient(135deg,#FF85A1,#FFB3C6)">
-            ⚖️
-          </div>
-          <h3 class="font-900 text-xl text-gray-800 mb-3">Calcul intelligent</h3>
-          <p class="text-gray-stone font-600 leading-relaxed text-sm">
-            Calcule instantanément le vrai prix au kilo ou au litre pour comparer les produits. Fais les meilleurs choix sans sortir ta calculette !
-          </p>
-          <div class="mt-6 flex gap-2">
-            <span class="text-xs font-700 px-3 py-1 rounded-full" style="background:#FFF0F4; color:#FF85A1">Prix / kg</span>
-            <span class="text-xs font-700 px-3 py-1 rounded-full" style="background:#FFF0F4; color:#FF85A1">Prix / L</span>
-          </div>
-        </div>
-
-        <!-- Card 3 : Confidentialité -->
-        <div class="feature-card bg-white rounded-4xl p-8 shadow-card relative overflow-hidden">
-          <div class="absolute top-0 right-0 w-32 h-32 rounded-full -translate-y-1/2 translate-x-1/2 opacity-10" style="background:#FF85A1"></div>
-          <div class="w-16 h-16 rounded-3xl flex items-center justify-center text-3xl mb-6 shadow-soft" style="background:linear-gradient(135deg,#FF85A1,#FFB3C6)">
-            🔒
-          </div>
-          <h3 class="font-900 text-xl text-gray-800 mb-3">Confidentialité totale</h3>
-          <p class="text-gray-stone font-600 leading-relaxed text-sm">
-            Aucune donnée envoyée sur internet. Tout est stocké localement sur ton appareil. Fonctionne même hors ligne, pas de compte requis.
-          </p>
-          <div class="mt-6 flex gap-2">
-            <span class="text-xs font-700 px-3 py-1 rounded-full" style="background:#FFF0F4; color:#FF85A1">100% local</span>
-            <span class="text-xs font-700 px-3 py-1 rounded-full" style="background:#FFF0F4; color:#FF85A1">Hors ligne</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Extra features row -->
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
-        <div class="bg-white rounded-3xl p-5 shadow-soft text-center">
-          <div class="text-2xl mb-2">📋</div>
-          <p class="text-xs font-800 text-gray-700">Liste de courses</p>
-          <p class="text-xs font-600 text-gray-stone mt-1">Prépare à l'avance</p>
-        </div>
-        <div class="bg-white rounded-3xl p-5 shadow-soft text-center">
-          <div class="text-2xl mb-2">📷</div>
-          <p class="text-xs font-800 text-gray-700">Photo des tickets</p>
-          <p class="text-xs font-600 text-gray-stone mt-1">Garde tes preuves</p>
-        </div>
-        <div class="bg-white rounded-3xl p-5 shadow-soft text-center">
-          <div class="text-2xl mb-2">📊</div>
-          <p class="text-xs font-800 text-gray-700">Historique</p>
-          <p class="text-xs font-600 text-gray-stone mt-1">Graphiques & stats</p>
-        </div>
-        <div class="bg-white rounded-3xl p-5 shadow-soft text-center">
-          <div class="text-2xl mb-2">🎨</div>
-          <p class="text-xs font-800 text-gray-700">4 thèmes</p>
-          <p class="text-xs font-600 text-gray-stone mt-1">Personnalise l'app</p>
-        </div>
-      </div>
+  <!-- 2. Données collectées -->
+  <section>
+    <h2><span class="emoji">🗂️</span> 2. Données collectées</h2>
+    <p><strong>EasyCourses ne collecte aucune donnée personnelle.</strong></p>
+    <p>L'application ne demande pas et ne traite pas :</p>
+    <ul>
+      <li>Votre nom, prénom ou adresse e-mail</li>
+      <li>Votre localisation géographique</li>
+      <li>Vos contacts ou votre carnet d'adresses</li>
+      <li>Vos informations de paiement</li>
+      <li>Votre identifiant publicitaire (GAID)</li>
+      <li>Votre adresse IP ou tout identifiant réseau</li>
+    </ul>
+    <div class="highlight">
+      💡 Toutes les informations que vous saisissez (articles, prix, budget, notes…) sont stockées
+      <strong>uniquement sur votre appareil</strong>, dans la mémoire locale de l'application.
     </div>
   </section>
 
-  <!-- Wave divider -->
-  <div class="wave-divider" style="background:white">
-    <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-      <path d="M0,30 C360,0 1080,60 1440,30 L1440,0 L0,0 Z" fill="#F8F8FA"/>
-    </svg>
-  </div>
+  <!-- 3. Stockage local -->
+  <section>
+    <h2><span class="emoji">📱</span> 3. Stockage local sur votre appareil</h2>
+    <p>
+      EasyCourses utilise le <strong>stockage local</strong> de votre téléphone (localStorage) pour sauvegarder :
+    </p>
+    <ul>
+      <li>Votre panier et vos articles en cours</li>
+      <li>Votre liste de courses</li>
+      <li>Votre budget défini</li>
+      <li>Vos préférences d'affichage (thème, mode sombre)</li>
+      <li>Votre historique de sessions</li>
+      <li>Les photos de tickets de caisse que vous avez archivées</li>
+    </ul>
+    <p>
+      Ces données <strong>ne quittent jamais votre appareil</strong>. Elles sont supprimées automatiquement 
+      si vous désinstallez l'application, ou manuellement depuis les réglages de votre téléphone.
+    </p>
+  </section>
 
-  <!-- ═══════════════════════════════
-       CTA DOWNLOAD
-  ═══════════════════════════════ -->
-  <section class="py-24 px-6 relative overflow-hidden bg-white">
-    <div class="blob w-96 h-96 -top-20 -right-20 opacity-25" style="background:#FFB3C6"></div>
-    <div class="blob w-64 h-64 bottom-0 left-10 opacity-20" style="background:#FF85A1"></div>
+  <!-- 4. Accès à la caméra -->
+  <section>
+    <h2><span class="emoji">📷</span> 4. Accès à la caméra et à la galerie</h2>
+    <p>
+      EasyCourses peut demander l'accès à votre <strong>appareil photo</strong> et à votre 
+      <strong>galerie de photos</strong> uniquement si vous utilisez la fonctionnalité 
+      d'archivage de tickets de caisse.
+    </p>
+    <p>
+      Cet accès est <strong>strictement limité</strong> à la prise ou à la sélection d'une photo 
+      de ticket. Les images sont compressées et stockées localement sur votre appareil.
+      <strong>Aucune photo n'est envoyée sur un serveur externe.</strong>
+    </p>
+    <p>
+      Vous pouvez refuser cet accès à tout moment dans les paramètres de votre téléphone.
+      Les autres fonctionnalités de l'application resteront pleinement disponibles.
+    </p>
+  </section>
 
-    <div class="relative z-10 max-w-2xl mx-auto text-center">
-      <div class="inline-block badge mb-6">Disponible maintenant</div>
-      <h2 class="font-display text-4xl md:text-5xl mb-6" style="color:#FF85A1">
-        Prêt·e à économiser ? 🛒
-      </h2>
-      <p class="text-gray-stone font-600 text-lg leading-relaxed mb-10">
-        Télécharge EasyCourses gratuitement et commence à mieux gérer tes dépenses dès ta prochaine sortie en courses.
-      </p>
+  <!-- 5. Connexion Internet -->
+  <section>
+    <h2><span class="emoji">🌐</span> 5. Connexion Internet</h2>
+    <p>
+      <strong>EasyCourses fonctionne entièrement hors ligne.</strong> L'application ne nécessite 
+      aucune connexion Internet pour fonctionner.
+    </p>
+    <p>
+      Aucune donnée n'est envoyée vers des serveurs externes. Aucune communication réseau 
+      n'est établie lors de l'utilisation normale de l'application.
+    </p>
+  </section>
 
-      <!-- Download button -->
-      <a href="#" class="btn-shine inline-flex items-center gap-3 text-white font-900 text-lg px-10 py-5 rounded-3xl shadow-float hover:scale-105 transition-all duration-300"
-         style="background:linear-gradient(135deg, #FF85A1, #FF5C8A)">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
-        </svg>
-        Télécharger l'APK
-      </a>
+  <!-- 6. Publicités & trackers -->
+  <section>
+    <h2><span class="emoji">📢</span> 6. Publicités</h2>
+    <p>
+      EasyCourses affiche des <strong>publicités proposées par Google AdMob</strong>, un service 
+      publicitaire fourni par Google LLC.
+    </p>
+    <p>
+      Pour afficher des annonces pertinentes, Google AdMob peut collecter et utiliser 
+      certaines informations sur votre appareil, notamment :
+    </p>
+    <ul>
+      <li>Votre identifiant publicitaire Android (GAID), si vous avez consenti à la personnalisation des annonces</li>
+      <li>Des données techniques sur votre appareil (modèle, version d'OS, langue)</li>
+      <li>Des données de comportement publicitaire agrégées et anonymisées</li>
+    </ul>
+    <div class="highlight">
+      💡 Ces données sont collectées et traitées par <strong>Google</strong>, conformément à sa propre 
+      politique de confidentialité : 
+      <a href="https://policies.google.com/privacy" target="_blank" style="color:#1565C0;">policies.google.com/privacy</a>
+    </div>
+    <p style="margin-top:12px;">
+      Vous pouvez à tout moment <strong>désactiver la personnalisation des publicités</strong> 
+      dans les paramètres de votre téléphone Android :
+      <em>Paramètres → Google → Annonces → Désactiver la personnalisation des annonces</em>.
+    </p>
+    <p>
+      EasyCourses elle-même ne collecte, ne stocke ni ne transmet aucune donnée liée à la publicité.
+    </p>
+  </section>
 
-      <p class="text-xs text-gray-stone font-600 mt-4">Android · Gratuit · Aucun compte requis</p>
+  <!-- 7. Partage des données -->
+  <section>
+    <h2><span class="emoji">🤝</span> 7. Partage des données avec des tiers</h2>
+    <p>
+      <strong>Aucune donnée n'est partagée avec des tiers.</strong> Étant donné qu'aucune donnée 
+      personnelle n'est collectée, il n'y a rien à transmettre, vendre ou partager.
+    </p>
+    <p>
+      EasyCourses n'utilise aucun service tiers ayant accès à vos informations.
+    </p>
+  </section>
 
-      <!-- Store badges placeholder -->
-      <div class="flex justify-center gap-4 mt-8">
-        <div class="flex items-center gap-2 px-5 py-3 rounded-2xl border-2 border-gray-dove text-sm font-700 text-gray-stone cursor-pointer hover:border-rose-blush hover:text-rose-blush transition-all duration-200">
-          <span class="text-xl">🏪</span> Samsung Galaxy Store
-        </div>
-      </div>
+  <!-- 8. Droits des utilisateurs -->
+  <section>
+    <h2><span class="emoji">⚖️</span> 8. Vos droits</h2>
+    <p>
+      Conformément au Règlement Général sur la Protection des Données (RGPD) et aux lois applicables,
+      vous disposez de droits concernant vos données personnelles.
+    </p>
+    <p>
+      Dans le cas d'EasyCourses, l'exercice de ces droits est entièrement entre vos mains, 
+      puisque <strong>toutes vos données sont stockées localement sur votre appareil</strong> :
+    </p>
+    <ul>
+      <li><strong>Droit d'accès</strong> — vos données sont visibles directement dans l'application</li>
+      <li><strong>Droit de rectification</strong> — modifiez vos données depuis l'application à tout moment</li>
+      <li><strong>Droit à l'effacement</strong> — supprimez vos données depuis l'application ou en la désinstallant</li>
+      <li><strong>Droit à la portabilité</strong> — vos données restent sur votre appareil, sous votre contrôle</li>
+    </ul>
+  </section>
+
+  <!-- 9. Enfants -->
+  <section>
+    <h2><span class="emoji">👶</span> 9. Protection des mineurs</h2>
+    <p>
+      EasyCourses est une application destinée à <strong>tout public</strong> et ne collecte 
+      aucune donnée sur les utilisateurs, quel que soit leur âge.
+    </p>
+    <p>
+      L'application ne cible pas spécifiquement les enfants de moins de 13 ans et ne collecte 
+      aucune information personnelle les concernant.
+    </p>
+  </section>
+
+  <!-- 10. Modifications -->
+  <section>
+    <h2><span class="emoji">🔄</span> 10. Modifications de cette politique</h2>
+    <p>
+      Cette politique de confidentialité peut être mise à jour occasionnellement. 
+      Toute modification sera reflétée sur cette page avec une nouvelle date d'entrée en vigueur.
+    </p>
+    <p>
+      En continuant à utiliser EasyCourses après une mise à jour, vous acceptez la politique révisée.
+    </p>
+  </section>
+
+  <!-- 11. Contact -->
+  <section>
+    <h2><span class="emoji">📬</span> 11. Contact</h2>
+    <p>
+      Pour toute question concernant cette politique de confidentialité ou la gestion de vos données,
+      vous pouvez nous contacter à l'adresse suivante :
+    </p>
+    <div class="highlight">
+      📧 <strong>easycourses.app@gmail.com</strong><br>
     </div>
   </section>
 
-  <!-- ═══════════════════════════════
-       FOOTER
-  ═══════════════════════════════ -->
-  <footer style="background:#FFF0F4">
-    <div class="max-w-5xl mx-auto px-6 py-12">
-      <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+  <p class="date-info">
+    Dernière mise à jour : <strong>Mars 2026</strong><br>
+    Entrée en vigueur : <strong>Mars 2026</strong>
+  </p>
 
-        <!-- Logo -->
-        <div class="flex items-center gap-2">
-          <span class="text-2xl">🛍️</span>
-          <span class="font-display text-xl" style="color:#FF85A1">EasyCourses</span>
-        </div>
+</main>
 
-        <!-- Links -->
-        <div class="flex gap-8 text-sm font-700 text-gray-stone">
-          <a href="#" class="hover:text-rose-blush transition-colors">Confidentialité</a>
-          <a href="#" class="hover:text-rose-blush transition-colors">Mentions légales</a>
-          <a href="/cdn-cgi/l/email-protection#f29793818b919d8780819781dc938282b2959f939b9edc919d9f" class="hover:text-rose-blush transition-colors">Contact</a>
-        </div>
+<footer>
+  EasyCourses © 2026 — Tous droits réservés
+</footer>
 
-        <!-- Social / misc -->
-        <p class="text-xs font-600 text-gray-stone text-center md:text-right">
-          Fait avec ❤️ · Données 100% locales<br>
-          <span class="opacity-60">© 2026 EasyCourses · Tous droits réservés</span>
-        </p>
-      </div>
 
-      <div class="border-t border-pink-100 mt-8 pt-6 text-center">
-        <p class="text-xs text-gray-stone font-600 opacity-60">
-          EasyCourses est une application gratuite. Aucune donnée n'est collectée ni envoyée sur des serveurs externes.
-        </p>
+
+</body></html>
